@@ -57,6 +57,15 @@ const mouseDown = (event) => {
         highlightElement.style.opacity = 1
 }
 
+const getTextWidth = (text, font) => {
+    let canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"))
+    let context = canvas.getContext("2d")
+    context.font = font
+    let metrics = context.measureText(text)
+    let charBoundingBox = Math.abs(metrics.actualBoundingBoxLeft) + Math.abs(metrics.actualBoundingBoxRight)
+    return (charBoundingBox > metrics.width) ?  charBoundingBox : metrics.width
+}
+
  const destroyBox = () => {
     highlightElement.style.left = '0px'
     highlightElement.style.top = '0px'
