@@ -1,5 +1,5 @@
 {
-  "name": "box-selection",
+  "name": "@vishwanath_rajakumar/box-selection",
   "version": "0.0.1",
   "description": "Box selection over any html elements to extract the selected text",
   "main": "index.js",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/vishwanathrajakumar/box-selection/issues"
   },
-  "homepage": "https://github.com/vishwanathrajakumar/box-selection#readme"
+  "homepage": "https://github.com/vishwanathrajakumar/box-selection#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
